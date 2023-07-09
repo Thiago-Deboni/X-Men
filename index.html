@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto X-Men</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+    <link rel="styleshet" href="src/css/scrollbar.css">
+    
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="./src/imagens/logo.svg" alt=" Logo x-men">
+    </header>
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+            <h1 class="titulo"> Selecione um personagem </h1>
+            <ul class="lista-de-personagens">
+                <li class="personagem selecionado" id="ciclope" data-name="Ciclope" data-description="(Ciclope) é Scott Summers, personagem criado por Jack Kirby e Stan Lee em 1963, membro fundador do grupo X-Men e líder de campo da equipe. Nascido mutante, ele tem o poder de projetar pura energia de seus olhos, através de raios de energia concussiva controlados por seu visor feito de quartzo-rubi">
+                    <img src="./src/imagens/card-ciclope.jpg" alt="Personagem Ciclope">
+                </li>
+                <li class="personagem" id="jean-grey" data-name="Jean Grey" data-description="Jean Grey além de poderosa telepata, telecinética e psiônica, quando Jean torna-se avatar da Força Fênix, ganha controle sobre o fogo cósmico, manipulação temporal e a habilidade de ressureição. Ao lado de Ciclope, além de membros fundadores dos X-Men, os dois até hoje são um dos mais antigos e adorados casais da Marvel.">
+                    <img src="./src/imagens/card-jean-grey.jpg" alt="Personagem Jean Grey">
+                </li>
+                <li class="personagem" id="lince-negra" data-name="Lince Negra" data-description="Kitty é uma mutante com a capacidade de passar pela matéria sólida, passando suas partículas atômicas pelos espaços entre os átomos do objeto pelo qual ela está se movendo. Dessa maneira, ela e o objeto pelo qual está passando podem se fundir temporariamente sem interagir, e cada um fica ileso quando Kitty termina de passar pelo objeto">
+                    <img src="./src/imagens/card-lince-negra.jpg" alt="Personagem Lince Negra">
+                </li>
+                <li class="personagem" id="tempestade" data-name="Tempestade" data-description="Ororo Munroe ou Tempestade  foi encontrada pelo Professor Xavier e uniu-se aos X-men que a transformaram em uma grande lutadora, tanto armada quanto desarmada. Além de saber grandes técnicas, que já fizeram ela ganhar lutas com “vilões” muito maiores, também consegue dominar uma série de elementos, assim como: Temperatura, umidade (a nível molecular), raios eletromagnéticos, pressão atmosférica, furacões, tempestades, nevadas, tempestades cósmicas, ventos solares, correntes oceânicas, campo eletromagnéticos">
+                    <img src="./src/imagens/card-tempestade.jpg" alt="Personagem Tempestade">
+                </li>
+                <li class="personagem" id="vampira" data-name="Vampira" data-description="A bela e destemida Vampira sempre possuiu uma vida sofrida e trágica desde sua infância. Criada por sua severa tia Carrie após eventos dramáticos envolvendo seus pais, a jovem Anna Marie fugiu de casa e acabou adotada pela transmorfa Mística e sua companheira, a precongnitiva cega Sina. O poder mutante de Vampira manifestou-se pela primeira vez no início da adolescência, quando em sua casa a menina beijou um garoto chamado Cody Robbins e sua mente foi invadida pelas memórias do rapaz, que entrou em coma permanente">
+                    <img src="./src/imagens/card-vampira.jpg" alt="Personagem Vampira">
+                </li>
+                <li class="personagem" id="wolverine" data-name="Wolverine" data-description="James Howlett ou Wolverine nasceu no norte de Alberta, Canadá, no final da década de 1880, supostamente filho dos ricos proprietários de fazendas John e Elizabeth Howlett, embora ele seja realmente o filho ilegítimo de Elizabeth e do caseiro dos Howletts, Thomas Logan. Depois que Thomas é expulso da propriedade dos Howlett por uma tentativa de estupro perpetrada por seu outro filho, chamado simplesmente Cão, ele retorna à mansão Howlett e mata John Howlett. Em retaliação, o jovem James mata Thomas com garras de osso que emergem da parte de trás de suas mãos, conforme a sua mutação se manifesta">
+                    <img src="./src/imagens/card-wolverine.jpg" alt="Personagem Wolverine">
+                </li>
+                <li class="personagem" id="noturno" data-name="Noturno" data-description="Kurt Wagner nasceu na região alemã da Baviera, filho da terrorista Mística e do mutante de aparência demoníaca Azazel. Isso aconteceu quando ela era esposa de Lorde Darkholme. Ao nascer com orelhas pontudas, rabo e apenas três dedos na mãos e nos pés, sua mãe o abandonou num rio para não ser linchada pelos aldeões de sua vila. Seu principal porder é de Teletransportar">
+                    <img src="./src/imagens/card-noturno.jpg" alt="Personagem Noturno">
+                </li>
+                <li class="personagem" id="magneto" data-name="Magneto" data-description="Magneto possui o poder de manipular qualquer tipo de metal, inclusive Vibranium e Adamantium. Ele tem o controle do magnetismo, do metal, e vários campos magnéticos, com isso ele cria campos de força eletromagnéticos, pode literalmente desligar a gravidade em volta de si isso lhe permite voar a distâncias e velocidades razoáveis.">
+                    <img src="./src/imagens/card-magneto.jpg" alt="Personagem Magneto">
+                </li>
+                <audio autoplay="autoplay" controls="controls"> 
+                    <source src="./WhatsApp Audio 2023-07-07 at 00.52.56.mpeg" type="audio/mp3" />
+                </audio>
+            </ul>
+        </section>
+        <section class="personagem-selecionado">
+            <img class="personagem-grande" src="./src/imagens/card-ciclope.png" alt="Personagem Selecionado">
+            <div class="informacoes-personagem"></div>
+            <h2 class="nome-personagem" id="nome-personagem">Ciclope</h2>
+            <p class="descricao-personagem" id="descricao-personagem"> Ele tem o poder de disparar rajadas ópticas por
+                um acidente que aconteceu com ele quando criança, mas não consegue controlá-los</p>
+                </section>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
